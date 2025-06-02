@@ -1,0 +1,34 @@
+New Assignment 2 Changes:
+- Changed Canvas Card implementation to be constructed through the PlayingCard given only a color,
+  all canvas cards have a number value of -1 to indicate that the number is unusable.
+
+- Changed Model view implementation to only output the first character of the canvas card toString,
+  which completely removes any number associated to the canvas card in the string output and only
+  outputs its abbreviated color.
+
+- Moved Color Rules to their own package implementing their own interface
+
+- Documented meaning of fields based on self-eval
+
+- Separated whether palette is winning from play methods based on self-eval
+
+- Improved javadoc clarifying what happens when the given deck to startGame is null
+
+- Added a test for deck shuffling
+
+New Assignment 4 Changes:
+- Refactored color rules to be constructed without fields
+
+- Created NewLine transmit helper class according to self-eval
+
+- Added newline to end of render method according to self-eval
+
+- Added tests according to self-eval
+
+- Created an abstract RedGameModel class. This is so that the actual RedGameModel game types
+  are to be instantiated as their own game types rather than having one game type of RedGameModel
+  extend a different game type of RedGameModel. Fields in the abstract class are all protected
+  for future models to use without reimplementation of fields.
+
+- Changed various Color Rule implementations for edge cases not included in documentation and
+  proper tieRule handling
