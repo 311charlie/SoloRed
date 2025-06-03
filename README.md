@@ -160,7 +160,7 @@ A player wins when all conditions are met:
 #### **Losing Conditions**
 A player loses when all conditions are met:
 - They play a card to a palette that does not change the currently winning palette
-- This is determined by comparing the target palette index with winningPaletteIndex()
+- This is determined by comparing the target palette index with `winningPaletteIndex()`
 
 ## **Initial State Setup**
 1. Optionally shuffle the deck using provided `Random` object
